@@ -6,13 +6,15 @@ public class Product {
 	private String name, description, details;
 	private int quantity;
 	private double price;
+	private double inventoryPrice;
 
-	public Product(int id, int quantity, double price, String name, String description) {
+	public Product(int id, int quantity, double price, String name, String description, double inventory) {
 		setId(id);
 		setQuantity(quantity);
 		setPrice(price);
 		setName(name);
 		setDescription(description);
+		setInventoryPrice (inventory);
 	}
 
 	public Integer getId() {
@@ -63,8 +65,7 @@ public class Product {
 		this.price = price;
 	}
 
-	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
-	}
+	public double getInventoryPrice() {	return inventoryPrice; }
+
+	public void setInventoryPrice (double inventoryPrice) {this.price = inventoryPrice; }
 }
