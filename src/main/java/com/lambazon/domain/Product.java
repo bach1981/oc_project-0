@@ -54,8 +54,10 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
-		if getQuantity()>0 {quantity=0}
-		if else {this.quantity = quantity};
+		if (getQuantity()>0)
+			return 0;
+
+		 else {this.quantity = quantity};
 	}
 
 	public double getPrice() {
@@ -63,9 +65,15 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		if getPrice()< 0 {price=0}
-		if else getPrice()>1000 {price=1000}
-		if else {this.price = price};
+		if (getPrice()< 0)
+			return 0;
+
+		else if ( getPrice() >1000)
+			return 1000;
+
+		else if
+
+		return price = price;
 
 	}
 
